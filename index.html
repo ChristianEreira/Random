@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple yet modern random number generator">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+    <title>Simple Random Number Generator</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Random Number Generator</h1>
+        <div id="middle">
+            <div class="inputBox" id="bigMin">
+                <label for="bMinBox">Min</label>
+                <input type="number" name="min" id="bMinBox" min="0" value="0">
+            </div>
+            <p id="number" class="noDisplay hidden"></p>
+            <div class="inputBox" id="bigMax">
+                <label for="bMaxBox">Max</label>
+                <input type="number" name="max" id="bMaxBox" min="1" value="10">
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="inputBox small hidden" id="smallMin">
+                <label for="sMinBox">Min</label>
+                <input type="number" name="min" id="sMinBox" min="0" value="0">
+            </div>
+            <div class="button" onclick="generate()">GENERATE</div>
+            <div class="inputBox small hidden" id="smallMax">
+                <label for="sMaxBox">Max</label>
+                <input type="number" name="max" id="sMaxBox" min="1" value="10">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
